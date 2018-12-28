@@ -1,2 +1,2 @@
 # elunch
-trst new repository elunch
+test new repository elunch
