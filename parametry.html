@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>Schneider Parametry</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+</head>
+<body>
+<h1>Paramertry </h1>  
+<br>
+<div> 
+<p> dopłata SEIP: <br></p>
+<?php
+require "connection.php"; 
+connection();  
+$zapytanie = "select * from parametry";
+ 
+if (mysqli_query($link, $zapytanie)) {
+    echo "odczytany rekord";
+	} else {
+    //echo "Error: " . $zapytanie_odbierz . "<br>" . mysqli_error($link);
+	}
+
+mysqli_close($link);
+
+?>
+</div>
+</body>
+</html>
