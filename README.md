@@ -1,2 +1,2 @@
 # elunch
-test new repository elunch 2
+to zaczynamy z gitem
