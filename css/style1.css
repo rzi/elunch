@@ -1,7 +1,7 @@
 .fixed_header{
     width: 100%;
     table-layout: fixed;
-    border-collapse: collapse;	
+    border-collapse: collapse;
 	border:2px solid red;
 }
 
@@ -14,7 +14,7 @@
 .fixed_header th, .fixed_header td {
   padding: 5px;
   text-align: left;
-	
+
   border:1px solid red;
    /* width: 20%; /* to enable "word-break: break-all" */ */
   padding: 5px;
@@ -26,15 +26,15 @@
   width: 100%;
   overflow: auto;
   height: 200px;
-  
-	
+
+
 }
 
 .fixed_header  tr {
-   
+
     display: table; /* display purpose; th's border */
   width: 100%;
- 
+
 }
 
 

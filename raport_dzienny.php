@@ -44,7 +44,7 @@
                     <div class="container-fluid mh-100 ">
                         <div class=ramkaLewa>
                             <!--						<?php echo "<form action='' method='get'>";?>-->
-                            <p> Wybierz zakres raportu: <input name="my_datapicker" type="text" style="width:150px;" id="datepicker"></p> 
+                            <p> Wybierz zakres raportu: <input name="my_datapicker" type="text" style="width:150px;" id="datepicker"></p>
 
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                 <div class="col-12">
                     <div class="container">
                         <div class=ramkaLewa>
-                            <p> Wybierz raport:</p> 
+                            <p> Wybierz raport:</p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Opoka</a>
@@ -67,7 +67,7 @@
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
                                     <?php
-                                    require "connection.php"; 
+                                    require "connection.php";
                                     connection();
                                     echo "<table id='table1' class='fixed_headers' border='1'><thead><tr ><td>Nr. SAP</td><td >Imię</td><td>Nazwisko</td><td> Danie</td></tr></thead>";
                                     echo "<tbody>";
@@ -78,7 +78,7 @@
                                             $val2 = $row['my_first_name'];
                                             $val3 = $row['my_name'];
 
-                                            echo "<tr><td>";	
+                                            echo "<tr><td>";
                                             echo "<input type='text' name='danie0' value='$val' readonly> ";
                                             echo "</td>";
                                             echo "<td>";
@@ -126,7 +126,7 @@
                                     echo "</td>
                                             </tr>
                                             </tbody>
-                                            </table>";                                       
+                                            </table>";
 
                                     ?>
 
@@ -136,7 +136,7 @@
 
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <?php 
+                            <?php
                             require "dane_do_bazy.php";
 
                             ?>

@@ -1,11 +1,11 @@
 #hrline {
-  background-color:#009530; 
-  margin-left: 1px; 
-  margin-right:1px; 
+  background-color:#009530;
+  margin-left: 1px;
+  margin-right:1px;
   margin-top:0px;
-  height: 5px; 
+  height: 5px;
   width: 100%;
-  
+
 }
 .ddcss3support .ddshadow {
 background-color: transparent;
@@ -16,28 +16,28 @@ box-shadow: 5px 5px 5px #aaa; /* box-shadow color generally should be a little d
 
 p, form { margin: 0; /*display: inline;*/}
 body { margin: 0px 0px 0px 0px; }
-html, body, input, select { 
+html, body, input, select {
   color: #009530;
-  font-size: 16px; 
-  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 /*  line-height: 12px;*/
   text-align: left;
   width:auto;
 }
-.bigtitle { 
-    width: 170px; 
-    font-size: 24px; 
-    font-weight: bold; 
-    color: #009530; 
+.bigtitle {
+    width: 170px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #009530;
     line-height: 10px;
     text-align: center;
     float: inherit;
     vertical-align: text-bottom;
-    
-} 
+
+}
 .logoSchneider{
-	width: 160px; 	
-	
+	width: 160px;
+
 }
 
 .layout {
@@ -52,20 +52,20 @@ html, body, input, select {
     border: 3px solid #009530;
     padding: 10px;
      font-size: 18px;
-     color: #009530; 
+     color: #009530;
     text-align-last: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 	line-height: 140%;
-    
-    
+
+
     }
 .obrazek {
     display: block;
     margin-left: 360px;
-    
+
     width: 50%;
 }
 .logowanie{
@@ -74,43 +74,43 @@ html, body, input, select {
     text-align-last: right;
     float: right;
     margin-top: 8px;
-    
+
 }
 .flex-container {
   display: flex;
   text-align-last: left;
-  
+
 }
 .flex-container2 {
   display: flex;
   text-align-last: left;
- 
+
 }
 .hader1
 {
     width: 350px;
     padding-left: 20px;
-    font-size: 20px; 
-    font-weight: bold; 
+    font-size: 20px;
+    font-weight: bold;
     color: #009530;
 	margin-top: 8px;
 }
 
 .hader2
 {
-    width: 480px; 
-    font-size: 20px; 
-    font-weight: bold; 
+    width: 480px;
+    font-size: 20px;
+    font-weight: bold;
     color: #009530;
 	margin-top: 27px;
 	text-align-last: center;
-	       
+
 }
 .napis_dolny{
 	font-size: 30px;
-    color: #009530; 
+    color: #009530;
     text-align-last: center;
-    
+
 }
 
 .lewy {
@@ -119,32 +119,32 @@ html, body, input, select {
     border: 3px solid #009530;
     padding: 10px;
      font-size: 18px;
-     color: #009530; 
+     color: #009530;
     text-align-last: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 	line-height: 100%;
-    
-    
+
+
     }
-	
+
 	.prawy {
     margin: auto;
     width: 66%;
     border: 3px solid #009530;
     padding: 10px;
      font-size: 18px;
-     color: #009530; 
+     color: #009530;
     text-align-last: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 	line-height: 100%;
-    
-    
+
+
     }
 	.srodek {
     margin: auto;
@@ -152,24 +152,24 @@ html, body, input, select {
     border: 3px solid #009530;
     padding: 10px;
      font-size: 18px;
-     color: #009530; 
+     color: #009530;
     text-align-last: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 	line-height: 100%;
-    
-    
+
+
     }
-	
+
 	.lewy_d {
     margin: auto;
     width: 33%;
     border: 3px solid #009530;
     padding: 10px;
     font-size: 18px;
-    color: #009530; 
+    color: #009530;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -178,18 +178,18 @@ html, body, input, select {
 	height: auto;
 	text-align: left;
 	word-wrap:break-word;
-	
-    
-    
+
+
+
     }
-	
+
 	.prawy_d {
     margin: auto;
     width: 66%;
     border: 3px solid #009530;
     padding: 10px;
      font-size: 18px;
-     color: #009530; 
+     color: #009530;
 	text-align-last: left;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -198,7 +198,7 @@ html, body, input, select {
 	line-height: 100%;
 	height: auto;
     word-wrap:break-word;
-    
+
     }
 	.srodek_d {
     margin: auto;
@@ -206,7 +206,7 @@ html, body, input, select {
     border: 3px solid #009530;
     padding: 10px;
      font-size: 18px;
-     color: #009530; 
+     color: #009530;
     text-align-last: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -233,9 +233,9 @@ text-align-last: left;
 .radio{
  font-size: 10px;
 
- 
+
   background-color: #eee;
-} 
+}
 
 .menuCSS1 {
     margin: auto;
@@ -243,7 +243,7 @@ text-align-last: left;
     border: 3px solid #009530;
     padding: 10px;
     font-size: 18px;
-    color: #009530; 
+    color: #009530;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -251,9 +251,9 @@ text-align-last: left;
 	line-height: 100%;
 
 	text-align-last: center;
-	
+
     word-wrap:break-word;
-    
+
     }
 	.menuCSS2 {
     margin: auto;
@@ -261,7 +261,7 @@ text-align-last: left;
     border: 3px solid #009530;
     padding: 10px;
     font-size: 18px;
-    color: #009530; 
+    color: #009530;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -271,29 +271,29 @@ text-align-last: left;
 	text-align: left;
 	word-wrap:break-word;
 
-    
-    
+
+
     }
 		.menuCSS5 {
- 
+
     font-size: 18px;
-    color: #009530; 
+    color: #009530;
   	line-height: 100%;
 	height: 400px;
 	text-align: left;
 	word-wrap:break-word;
 
-    
-    
+
+
     }
-	
+
 	.menuCSS3 {
     margin: auto;
     width: 50%;
     border: 3px solid #009530;
     padding: 10px;
     font-size: 16px;
-    color: #009530; 
+    color: #009530;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -303,10 +303,10 @@ text-align-last: left;
 	text-align: left;
 	word-wrap:break-word;
 
-    
-    
+
+
     }
-	
+
 	table tbody tr:hover,
 table tbody tr:hover *{
     background: 	#FAEBD7;
@@ -319,7 +319,7 @@ table tbody tr thead tr *{
     padding: 10px;
     margin-left: 10px;
 
-	 
+
 }
 #menuOrder { display: none; }
 #menuLewe table{
@@ -334,7 +334,7 @@ table tbody tr thead tr *{
 	text-align-last: center;
 	table-layout: fixed;
 	border-collapse: collapse;
-	
+
 }
 #menuLewe tbody{
 display: block;
@@ -354,12 +354,12 @@ height: 200px;
 #menuLewe thead  {
 	background-color:green;
 	color:white;
-	/* width: calc(100% - 17px); /* -17px because of the scrollbar width */ 
+	/* width: calc(100% - 17px); /* -17px because of the scrollbar width */
 }
 #menuLewe2 thead  {
 	background-color:green;
 	color:white;
-	/* width: calc(100% - 17px); /* -17px because of the scrollbar width */ 
+	/* width: calc(100% - 17px); /* -17px because of the scrollbar width */
 }
 #menuLewe td th {
   padding: 5px;
@@ -383,11 +383,11 @@ height: 200px;
 }
 #menuLewe  .myTr{
 	width: calc(100% - 17px); /* -17px because of the scrollbar width */
-	
+
 }
 #menuLewe2  .myTr{
 	width: calc(100% - 17px); /* -17px because of the scrollbar width */
-	
+
 }
 #menuLewe3 table{
 	/*max-height:190px;*/
@@ -420,7 +420,7 @@ width:800px;
 	background-color:green;
 	color:white !important;
 /*
-	//width: calc(100% - 17px);  -17px because of the scrollbar width  
+	//width: calc(100% - 17px);  -17px because of the scrollbar width
 	//width:100%;
 */
 }
@@ -444,7 +444,7 @@ width:800px;
 
 #menuLewe3 .myTr2{
 	text-align-last: left;
-	
+
 }
 
 .tableOrder thead td tr {
@@ -453,19 +453,19 @@ width:800px;
 	width:100%;
 	text-align:center;
     padding: 10px;
-    
-    
-	
+
+
+
 }
 
 .tableOrder  td{
 	text-align: center;
 /*	width:15%;*/
 margin-left:10px;
-   
+
 }
 #mytable td tr th tbody {
-	
+
 	width:80px;
     padding: 10px;
 }
@@ -486,24 +486,24 @@ width:100%;
     text-align: center;
     text-decoration: none;
     display: inline-block ;
-    font-size: 16px;	
+    font-size: 16px;
 }
 
 .ramkaLewa{
-	
+
    width:100%;
     margin: 3px;
     border: 3px solid #009530;
     padding: 3px;
     padding-left: 10px;
      font-size: 18px;
-     color: #009530; 
+     color: #009530;
     text-align-last: left;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-	
+
 }
 #datepicker{
     margin-top: 5px;
@@ -526,16 +526,15 @@ width:100%;
 .fixed_headers td {
     padding: 5px;
     text-align: center;
-    width: 250px;
 /*    border: green;*/
 }
 .fixed_headers td:nth-child(1),
-{
-    width: 250px;
+.fixed_headers th:nth-child(1) {
+    min-width: 250px;
 }
 .fixed_headers td:nth-child(2),
 .fixed_headers th:nth-child(2) {
-    width: 250px;
+    min-width: 250px;
 }
 .fixed_headers td:nth-child(3),
 .fixed_headers th:nth-child(3) {
@@ -544,10 +543,6 @@ width:100%;
 
 .fixed_headers td:nth-child(4),
 .fixed_headers th:nth-child(4) {
-    width: 250px;
-}
-.fixed_headers td:nth-child(5),
-.fixed_headers th:nth-child(5) {
     width: 250px;
 }
 .fixed_headers thead {
@@ -566,7 +561,7 @@ width:100%;
 }
 .fixed_headers input{
     border: none;
-  width: 100px;  
+
 }
 .fixed_headers table{
     border-color: green;
@@ -592,7 +587,6 @@ text-decoration: underline;
 .fixed_headers_d td {
     padding: 5px;
     text-align: center;
-    width: 250px;
     /*    border: green;*/
 }
 .fixed_headers_d td:nth-child(1),
@@ -605,16 +599,16 @@ text-decoration: underline;
 }
 .fixed_headers_d td:nth-child(3),
 .fixed_headers_d th:nth-child(3) {
-    width: 250px;
+    width: 150px;
 }
 
 .fixed_headers_d td:nth-child(4),
 .fixed_headers_d th:nth-child(4) {
-    width: 250px;
+    width: 100px;
 }
 .fixed_headers_d td:nth-child(5),
 .fixed_headers_d th:nth-child(5) {
-    width: 250px;
+    width: 100px;
 }
 .fixed_headers_d thead {
     background-color: #009530;

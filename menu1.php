@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="/css/style.css" type="text/css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>	
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	
+
 	<script src="/js/menu.js"></script>
 	<script>
 		$(document).ready(function() {
-			
+
 			$("#datepicker").datepicker({ dateFormat: 'yy-mm-dd' });
 			$("#datepicker").datepicker().datepicker('setDate', 'today');
 			$("#datepicker").datepicker({
@@ -25,32 +25,32 @@
 			//var currentDate = $("#datepicker" ).datepicker( "getDate" );
 			$("#datepicker").datepicker({
 			//		your options...
-			
+
 				}).datepicker("show");
 			});
-			
-			
-	/* 	$(document).ready(function() {	
+
+
+	/* 	$(document).ready(function() {
 		$('input[value="1"]:checked');
-		
+
 		}); */
 	$("#menuOrder").hide();
 
-	</script>	
+	</script>
 </head>
 <body id="mybody" class="ddcss3support">
 	<!-- test bootstrap -->
 	<header class="container">
 	<a href="">LOGO</a>
 	</header>
-	
+
 	<div class="layout">
 		<div class="flex-container">
 			<div  class="logoSchneider">
 				<a href="/"><img src="/img/logo.png"> </a>
 			</div>
 			<div class="hader2" >
-				<p>Menu </p> 
+				<p>Menu </p>
 			</div>
 
 		</div>
@@ -61,12 +61,12 @@
 			<div class="menuCSS1" >
 			<p> Kalendarz i menu </p>
 			</div>
-		
+
 			<div class="menuCSS1">
 			<p> Zamówienia </P>
 			</div>
 		</div >
-		
+
 		<div class="flex-container2">
 			<div width="50px" height="50px" id="menuLewe" class="menuCSS2" >
 				<p>Data na kiedy zamawiasz lunch?: <br><input  type="text" style="top:200px;" id="datepicker"></p>
@@ -78,7 +78,7 @@
 					<br>
 						<div id="Opoka" class="tabcontent">
 							<?php
-							require "connection2.php"; 
+							require "connection2.php";
 							connection2();
 							//echo "<div >";
 							if($result2 = mysqli_query($link2,"select * from dostawca1 ORDER BY id ASC limit 20")){
@@ -108,7 +108,7 @@
 						</div>
 						<div id="Mucha" class="tabcontent">
 							<?php
-							require "connection3.php"; 
+							require "connection3.php";
 							connection3();
 							//echo "<div >";
 							if($result3 = mysqli_query($link3,"select * from dostawca2 ORDER BY id ASC limit 20")){
@@ -144,7 +144,7 @@
 				//echo "<br>";
 				echo "Lista twoich zamówień:";
 				//echo "<br>";
-				require "connection.php"; 
+				require "connection.php";
 				connection();
 				if($result = mysqli_query($link,"select * from orders ORDER BY id DESC limit 6")){
 					echo "<table class='tableOrder' border='1'><thead><tr class='myTr' ><th width='60px'>data</th><th width='100px'>dostawca</th><th width='60px'> numer</th><th> danie</th><th width='60px'> cena</th></tr></thead>";
@@ -173,13 +173,13 @@
 				</tr>
 				</table>";
 				?>
-					
+
 			</div>
-			
-			
+
+
 		</div>
-		
+
 	</div>
 
 </body>
-</html>  
+</html>

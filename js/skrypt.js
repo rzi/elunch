@@ -12,24 +12,24 @@ $(document).ready(function(){
 	myDostawca1="Opoka";
 	var myDostawca2= "";
 	myDostawca2="Mucha";
-	
+
 	danie="";
-	
+
 	//alert (" id "+id+" danie "+danie);
 	loadToListbox(); // wczytanie listy dań do listboxa
 
     /*WYSYŁANIE DANYCH DO BAZY*/
-    $('#wyslij').click(function () { /*Zdefiniowanie zdarzenia inicjującego 
+    $('#wyslij').click(function () { /*Zdefiniowanie zdarzenia inicjującego
     - kliknięcie przycisku wyślij*/
-     
-        /*Funkcja pobierająca wartość opcji z listy, w tym przypadku nazwa kraju, 
+
+        /*Funkcja pobierająca wartość opcji z listy, w tym przypadku nazwa kraju,
         która następnie zapisywana jest do zmiennej*/
         var numer = $('#order1').val();
         var date1 = $("#datepicker").datepicker().val();
 		function getTime() {
 			var teraz = new Date;
 			var wynik = teraz.getHours() + ":" + teraz.getMinutes();
- 
+
 		return(wynik);
 		}
 		//alert("Jest godzina " + getTime());
@@ -45,31 +45,31 @@ $(document).ready(function(){
             numer:numer,
 			danie:danie,
 			cena:cena
-			
-         
-            
-            }, /*Zdefiniowanie jakie dane będą wysyłane na zasadzie 
+
+
+
+            }, /*Zdefiniowanie jakie dane będą wysyłane na zasadzie
             pary klucz-wartość np: wartosc_z_listy_ajax=Polska*/
-                 
+
                 /*Działania wykonywane w przypadku sukcesu*/
                 success:function() {
- 
-                    /*Zdefiniowanie tzw. alertu (prostej informacji) w sytacji sukcesu wysyłania. 
-                    Za pomocą alertów możemy diagnozować poprawne działania funkcji. 
+
+                    /*Zdefiniowanie tzw. alertu (prostej informacji) w sytacji sukcesu wysyłania.
+                    Za pomocą alertów możemy diagnozować poprawne działania funkcji.
                     Jest to bardzo przydatne w sytacji problemów z dziłaniem programu.*/
 
 				$("#mybody").load( "order.php");
- 				
+
                 },
- 
+
                 /*Działania wykonywane w przypadku błędu*/
                 error: function(blad) {
                     alert( "Wystąpił błąd");
-                    console.log(blad); /*Funkcja wyświetlająca informacje 
+                    console.log(blad); /*Funkcja wyświetlająca informacje
                     o ewentualnym błędzie w konsoli przeglądarki*/
                 }
         });
- 
+
     });
 
 	var opoka = document.getElementById('opoka');
@@ -79,7 +79,7 @@ $(document).ready(function(){
 	myDostawca="dostawca1";
 	myDostawca2="Opoka";
 	loadToListbox();
-	
+
 	};
 	var mucha = document.getElementById('mucha');
 	mucha.onclick = function(){
@@ -88,15 +88,15 @@ $(document).ready(function(){
 	myDostawca = "dostawca2";
 	myDostawca2 = "Mucha";
 	loadToListbox();
-	}; 
-	 
+	};
+
 	var myOrder1 = document.getElementById('order1');
 		myOrder1.ondblclick = function(){
 		if (confirm('Czy jesteś pewien, że chcesz zamówic lunch?')) {
         alert('No to zamawiaj');
 		}
 	};
-	
+
 function loadToListbox(){
 	$.ajax({
 		type:"GET", /*Informacja o tym, że dane będą pobierane*/
@@ -105,62 +105,62 @@ function loadToListbox(){
 		dataType:'json', /*Informacja o formacie transferu danych*/
 		data        : { //dane do wysyłki
         dostawca : myDostawca
-        
+
 					},
-			
+
 			/*Działania wykonywane w przypadku sukcesu*/
 			success: function(json) { /*Funkcja zawiera parametr*/
 
-			
+
 				/*Pętla typu for...in języka Javascript na danych w formacie JSON*/
 				for (var klucz in json)
 					{
-						var wiersz = json[klucz];  /*Kolejne przebiegi pętli wstawiają nowy klucz*/     
+						var wiersz = json[klucz];  /*Kolejne przebiegi pętli wstawiają nowy klucz*/
 						 id = wiersz[0];
-						 
+
 						 numer=wiersz[1];
 						 danie = wiersz[2];
-						 
+
 						 cena=wiersz[3];
-					
+
 						// /*Ustalenie sposobu wyświetlania pobranych danych w bloku div*/
 						// $("<span>id: "+id+" numer: "+numer+" danie: "+danie+"  cena: "+cena+" zł</span>")
-						
+
 						 // .appendTo('#wykaz')
 						// .append("<hr>")
-						
+
 						 $("#order1").append($('<option>',
 						 { value: id,
 						 text: numer+" "+danie+" "+cena+" zł",
 						 selected: 1,
 						 selectedIndex: 1
 						 }));
-						
-						
-						
-					} 
 
-					  
 
- 
-				
-				
 
-				
+					}
+
+
+
+
+
+
+
+
 			},
-			 
-			 
+
+
 			/*Działania wykonywane w przypadku błędu*/
 			error: function(blad) {
 				alert( "Wystąpił błąd vvvvvvvvvvvvvvvvv");
-				console.log(blad); /*Funkcja wyświetlająca informacje 
+				console.log(blad); /*Funkcja wyświetlająca informacje
 				o ewentualnym błędzie w konsoli przeglądarki*/
 			}
-             
+
     });
-	
+
 }
 
-	
-	
+
+
 }); /*Klamra zamykająca $(document).ready(function(){*/

@@ -15,12 +15,12 @@
 				<div class="flex-fill p-2 bd-highlight">
 					<a href="/"><img src="/www/img/logo.png"> </a>
 				</div>
-				
+
 				<div class="flex-fill align-self-center ">
 					<h1>Zarządzanie użytkownikami </h1>
 				</div>
 			</div>
-			
+
 			<div id="hrline">
 			</div>
 		</div>
@@ -57,7 +57,7 @@
 								<datalist id="lista_typ">
 									<option value="user">
 									<option value="admin">
-								</datalist>	
+								</datalist>
 								<br/>
 								<input type="submit" value="dodaj" />
 								</form>
@@ -68,14 +68,14 @@
 
 				</div>
 				<div class="col-xs-12 col-sm-9 ">
-					<div class="container text-center" id="menuLewe3" class="menuCSS3"> 
-							
+					<div class="container text-center" id="menuLewe3" class="menuCSS3">
+
 								<h4>Lista użytkowników</h4>
-							<div class="mydive" id="mydive">	
-								<?php 
-								require "tableUsers.php"; 
+							<div class="mydive" id="mydive">
+								<?php
+								require "tableUsers.php";
 								?>
-							<div>	
+							<div>
 					</div>
 				</div>
 
@@ -86,13 +86,13 @@
 	<!-- Stopka strony -->
 	<footer class="site-footer">
 		<div class="container text-center">
-		<br>	Copyright 2006-2018 elunch.cba.pl			
+		<br>	Copyright 2006-2018 elunch.cba.pl
 		</div>
 	</footer>
 
 	<script src="/www/js/jquery.js"></script>
 	<script src="/www/js/bootstrap.min.js"></script>
 	<script src="/www/js/custom.js"></script>
-	
+
 </body>
 </html>

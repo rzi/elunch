@@ -1,5 +1,5 @@
 <?php
- 
+
 /*Za³¹czenie pliku odpowiadaj¹cego za po³¹czenie z baz¹ danych.*/
 require_once('baza.php');
 
@@ -15,10 +15,10 @@ $dofinansowanie="7";
 
 
 echo $sesa;
-echo $data_zam; 
- 
-/*Definicja funkcji filtruj¹cej wywo³ywana na zmiennej przed jej przes³aniem do bazy. 
+echo $data_zam;
+
+/*Definicja funkcji filtruj¹cej wywo³ywana na zmiennej przed jej przes³aniem do bazy.
 Utworzona ze wzglêdów bezpieczeñstwa.*/
- 
+
 
 ?>

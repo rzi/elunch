@@ -1,7 +1,7 @@
 /*Ustawienie wykonania działań wówczas, gdy strona jest całkowicie wczytana */
 $(document).ready(function(){
 
- $('#table1 tr').click(function () { 
+ $('#table1 tr').click(function () {
 
  x=($(this).children("td").html());
   //alert(x);
@@ -20,19 +20,19 @@ $(document).ready(function(){
 		var date2 = $("#datepicker").datepicker().val();
 		alert("Jest już po godzinie 9.00. Aby zamówic lunch zadzwoń na recepcje tel.326258400");
 		alert(date2);
-		
+
 	}
-	
-	
+
+
 	//alert("tak");
 	}
 	else {
 		//some code
 		alert("x");
 	}
- 
+
  });
- 
+
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();;
 
@@ -59,4 +59,3 @@ $(function() {
        	$("#menuOrder").show();
     });
 });
-	

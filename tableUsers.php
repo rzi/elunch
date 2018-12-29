@@ -1,21 +1,21 @@
-<?php 
+<?php
 //echo "tableUsers";
-//function getTable() { 
-	require "connection.php"; 
-	connection(); 
+//function getTable() {
+	require "connection.php";
+	connection();
 	if($result = mysqli_query($link,"select * from login ORDER BY id DESC ")){
 		echo "<table border='1'><thead>
 		<tr  >
 			<th> usuń</th>
-			<th> edycja</th>			
-			<th>SASA</th>		
+			<th> edycja</th>
+			<th>SASA</th>
 
 
 			<th> Imię</th>
 			<th> Nazwisko</th>
 			<th> email</th>
-			<th> SAP nr.</th>			
-			<th> Grupa</th>			
+			<th> SAP nr.</th>
+			<th> Grupa</th>
 			<th> typ</th>
 
 		</tr></thead><tbody>";
@@ -65,7 +65,7 @@
 	</tr>
 	</body>
 	</table>";
-			
-//} 
 
-?> 
+//}
+
+?>
