@@ -27,6 +27,8 @@ var sesa;
             firstDay: 1
     });//.datepicker("show");
 
+
+
 	var currentDate = $( "#datepicker" ).datepicker( "getDate" );
 //	alert (currentDate);
 //
