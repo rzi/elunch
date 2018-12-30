@@ -1,7 +1,7 @@
 $(document).ready(function ( ){
 
     // inicjalizacja Ver0.1
-
+alert("ddd");
     var value1;
     var value2;
     var dostawca;
