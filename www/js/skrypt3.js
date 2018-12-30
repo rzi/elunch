@@ -10,13 +10,15 @@ $(document).ready(function ( ){
   //  var col_index = 0;
     var myData;
 
-    $( "#datepicker" ).datepicker();
+
 
     $(".act span").text(dost1); // domyslnie  dost1=opoka
 
     $("#datepicker").datepicker({
         dateFormat: 'yy-mm-dd'
     }); // format yy-mm-dd
+
+     $( "#datepicker" ).datepicker();
 
     // ustawienie bieżącej daty
     myData=$("#datepicker").find(":input:text").val();
@@ -37,10 +39,10 @@ $(document).ready(function ( ){
     } // bieżąca godzina
 
      // domyslne wczytanie aktywnego tabs -pierwszy
-    $(function () {
+    //$(function () {
         $('#myTab li:first-child a').tab('show');
         //alert("xxxx");
-    });
+    //});
 
     //obsługa przycsków
     $("#idBtn1").click(function () {
