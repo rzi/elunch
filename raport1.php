@@ -24,7 +24,7 @@
 
             <div class="flex-fill align-self-center ">
                 <h3 style="width:700px; text-align :center;">Raport  </h3>
-
+                
             </div>
             <div class="flex-fill align-self-center">
                 <button type="submit" class="btn btn-success" id="idBtn2"> Powrót</button>
@@ -45,7 +45,7 @@
                 <div class="container-fluid mh-100 ">
                     <div class=ramkaLewa>
                         <!--						<?php echo "<form action='' method='get'>";?>-->
-                        <p> Wybierz zakres raportu: <input name="my_datapicker" type="text" style="width:150px;" id="datepicker"></p>
+                        <p> Wybierz zakres raportu: <input name="my_datapicker" type="text" style="width:150px;" id="datepicker"></p> 
 
                     </div>
                 </div>
@@ -54,7 +54,7 @@
             <div class="col-12">
                 <div class="container">
                     <div class=ramkaLewa>
-                        <p> Wybierz raport:</p>
+                        <p> Wybierz raport:</p> 
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Dzienny</a>
@@ -67,49 +67,15 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                                <?php
-                                require "connection.php";
-                                connection();
-                                echo "<table id='table2' class='fixed_headers_d' border='1'><thead><tr ><td>Imię</td><td >Nazwisko</td><td>Dostawca</td><td> Danie</td> <td> Cena</td></tr></thead>";
-                                echo "<tbody>";
-                                if($result = mysqli_query($link,"select * from login, orders WHERE data='2018-12-03' and login.id_users = orders.id_users ")){
-
-//                                    if($result = mysqli_query($link,"select login.my_first_name login.my_name from login, orders WHERE login.id_users = orders.id_users and dostawca='Opoka' and data='2018-12-02'")){
-                                     while($row = mysqli_fetch_assoc($result)) {
-                                         echo "<tr><td>";
-                                         echo $row["my_first_name"];
-                                         echo "</td>";
-                                         echo "<td>";
-                                         echo  $row["my_name"];
-                                         echo "</td>";
-                                         echo "<td>";
-                                         echo $row["dostawca"];
-                                         echo "</td>";
-                                         echo "<td>";
-                                         echo $row["numer"];
-                                         echo "</td>";
-                                         echo "<td>";
-                                         echo $row["cena"];
-                                         echo "</td>";
-                                         echo "<tr>";
-                                    }
-                                 }
-                                mysqli_free_result($result);
-                                mysqli_close($link);
-                                echo "</td>
-                                        </tr>
-                                        </tbody>
-                                        </table>";
-
-                                ?>
+                                <div id="dane_tabela2"></div>
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-<!--
-                        <?php
-                        require "dane_do_bazy.php";
 
+                        <?php 
+                        //require "dane_do_bazy.php";
+                               // lorem
+                                    
                         ?>
--->
 
                     </div>
 
@@ -124,7 +90,7 @@
     <div class="container">
         <div class=ramkaLewa>
             <button type="button" class="btn btn-success" id="idBtn">Do excel</button>
-
+            
             <!--							<button input type="submit" class="btn btn-success" id="idBtn3" value="Wyślij" name="submit" /> wyślij</button>-->
         </div>
     </div>

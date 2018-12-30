@@ -10,10 +10,10 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="/www/js/skrypt.js"></script>
-
+	
 	<script>
 		$(document).ready(function() {
-
+			
 			$("#datepicker").datepicker({ dateFormat: 'yy-mm-dd' });
 			$("#datepicker").datepicker().datepicker('setDate', 'today');
 			$("#datepicker").datepicker({
@@ -24,33 +24,33 @@
 			//var currentDate = $("#datepicker" ).datepicker( "getDate" );
 			$("#datepicker").datepicker({
 			//		your options...
-
+			
 				}).datepicker("show");
 			});
-
-
-	/* 	$(document).ready(function() {
+			
+			
+	/* 	$(document).ready(function() {	
 		$('input[value="1"]:checked');
 		}); */
-	</script>
+	</script>	
 </head>
 <body id="mybody" class="ddcss3support">
-
+	
 	<div class="layout">
 		<div class="flex-container">
 			<div  class="logoSchneider">
 				<a href="/"><img src="/www/img/logo.png"> </a>
 			</div>
 			<div class="hader1" >
-				<p>Zamówienie </p>
+				<p>Zamówienie </p> 
 			</div>
 			<div class="logowanie" >
-				<p>Użytkownik:  <?php echo $_SESSION['sesa'];?> </p>
+				<p>Użytkownik:  <?php echo $_SESSION['sesa'];?> </p> 
                 <script>
                 var sesa1 = '<?php echo $_SESSION['sesa']; ?>';
                //alert ("alert: "+sesa1);
                 </script>
-			</div>
+			</div>      
 		</div>
 		<div id="hrline">
 		</div>
@@ -59,11 +59,11 @@
 			<div class="lewy" >
 			<p> Kalendarz </p>
 			</div>
-
+		
 			<div class="srodek">
 			<p> Menu </p>
 			</div>
-
+		
 			<div class="prawy">
 			<p> Lista zamówień </P>
 			</div>
@@ -74,11 +74,11 @@
 				<div>
 					<p><br>Date: <br><input  type="text" style="top:200px;" id="datepicker"></p>
 					<br>
-
+					
 					<br>
 				</div>
 			</div>
-
+		
 			<div class="srodek_d">
 			<form  id="myForm" method="POST" name="myForm">
 				<input id ="mucha" type="radio" name="dostawca" value="1" /> Mucha
@@ -88,10 +88,10 @@
 
 			<div class="select1">
 				<form>
-					<select size="18" style="width: 160px" id="order1" name="order1"  >
+					<select size="18" style="width: 160px" id="order1" name="order1"  > 
   					</select>
 					<br/>
-					<button id="wyslij" type="button">Zamów</button>
+					<button id="wyslij" type="button">Zamów</button> 
 				</form>
 				<br/>
 
@@ -100,10 +100,10 @@
 
 			<div id="baza" class="prawy_d">
 				<p> Lista<br><br></p>
-
+				
 				<div class="flex-container">
 				<?php
-				require "connection.php";
+				require "connection.php"; 
 				connection();
 				if($result = mysqli_query($link,"select * from orders ORDER BY id DESC limit 10")){
 					echo "<table class='tableOrder' border='1'><thead><tr ><td width='130px'>data</td><td>dostawca</td><td> numer</td><td> danie</td><td> cena</td></tr></thead>";
@@ -132,10 +132,10 @@
 				</tr>
 				</table>";
 				?>
-
+				
 			</div>
-		</div>
+		</div>		
 	</div>
 
 </body>
-</html>
+</html>  

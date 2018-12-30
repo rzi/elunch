@@ -19,7 +19,7 @@ th {text-align: left;}
 
 <?php
 $q = intval($_GET['q']);
-require "connection.php";
+require "connection.php"; 
 connection();
 
 mysqli_select_db($link ,"orders");
@@ -47,4 +47,4 @@ echo "</table>";
 mysqli_close($link);
 ?>
 </body>
-</html>
+</html> 

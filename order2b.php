@@ -1,19 +1,27 @@
 <!doctype html>
-<html>
-
+<html lang="pl-PL">
 <head>
     <title>Orders</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <link rel="stylesheet" href="/www/css/bootstrap.min.css">
     <link rel="stylesheet" href="/www/css/style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="/www/js/skrypt3.js"></script>
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+	
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script> -->
+	<!-- script src="https://code.jquery.com/jquery-1.12.4.js"></script>           -->
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
+    <script type="text/javascript" src="/www/js/skrypt3.js"></script>
 </head>
 
 <body>
+
+    <?php header('Content-type: text/html; charset=UTF-8'); ?>
     <!-- gora strony -->
     <header class="site-top">
         <div class="container ">
@@ -35,7 +43,7 @@
         </div>
 
     </header>
-
+    
     <!-- Tresc strony -->
     <section class="container">
         <div class="container">
@@ -43,13 +51,7 @@
                 <div class="col-12 col-lg-4 ">
                     <div class="container-fluid mh-100 ">
                         <div class=ramkaLewa>
-                            						<?php echo "<form action='' method='post'>";?>
-                            <p> Wybierz zakres raportu: <input name="my_datapicker" type="text" style="width:150px;" id="datepicker"></p>
-                              <p> <?php  echo"rrr";
-                                  $_POST['imie'];
-                                 echo " </form> "?></p>
-
-
+                            <p> Wybierz zakres raportu: <input name="datepicker" placeholder="wprowadź date:" type="text" style="width:150px;" id="datepicker"></p> 
                         </div>
                     </div>
                 </div>
@@ -57,7 +59,7 @@
                 <div class="col-12">
                     <div class="container">
                         <div class=ramkaLewa>
-                            <p> Wybierz raport:</p>
+                            <p> Wybierz raport:</p> 
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Opoka</a>
@@ -69,82 +71,10 @@
                             </ul>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-                                            <?php
-                                            require "connection.php";
-                                            connection();
-                                    echo "<table id='table1' class='fixed_headers' border='1'><thead><tr ><td>id_user</td><td >Imię</td><td>Nazwisko</td><td> Danie</td></tr></thead>";
-                                            echo "<tbody>";
-
-                                            if($result = mysqli_query($link,'select * from login WHERE 1')){
-                                                while($row = mysqli_fetch_assoc($result)) {
-                                                    $val = $row['id_users'];
-                                                    $val2 = $row['my_first_name'];
-                                                    $val3 = $row['my_name'];
-
-                                                    echo "<tr><td>";
-                                                    echo "<input type='text' name='danie0' value='$val' readonly> ";
-                                                    echo "</td>";
-                                                    echo "<td>";
-                                                    echo "<input type='text' name='danie1' value='$val2' readonly>";
-                                                    echo "</td>";
-                                                    echo "<td>";
-                                                    echo "<input type='text' name='danie2' value='$val3' readonly>";
-                                                    echo "</td>";
-                                                    echo "<td>";
-                                                    echo "<input type='text' id='danie3' class='danie3' name='danie3' value=''>";
-                                                    echo "</td>";
-    //												echo "<td>";
-    //												echo "<input type='text'  name='danie4' value=''>";
-    //												echo "</td>";
-    //												echo "<td>";
-    //												echo "<input type='text' name='danie5' value=''>";
-    //												echo "</td>";
-                                                    echo "</tr>" ;
-                                                }
-                                            }
-
-                                            // if($result = mysqli_query($link,"select * from orders WHERE dostawca='Opoka' and data='2018-08-12'")){
-                                                // echo "<table class='tableOrder' border='1'><thead><tr ><td>Imię</td><td>Nazwisko</td><td> Danie1</td><td> Danie2</td><td> Danie3</td></tr></thead>";
-                                                // while($row = mysqli_fetch_assoc($result)) {
-                                                    // echo "<tr><td>";
-                                                    // echo $row["data"];
-                                                    // echo "</td>";
-                                                    // echo "<td>";
-                                                    // echo  $row["dostawca"];
-                                                    // echo "</td>";
-                                                    // echo "<td>";
-                                                    // echo $row["numer"];
-                                                    // echo "</td>";
-                                                    // echo "<td>";
-                                                    // echo $row["danie"];
-                                                    // echo "</td>";
-                                                    // echo "<td>";
-                                                    // echo $row["cena"];
-                                                    // echo "</td>";
-                                                    // echo "<tr>";
-                                                // }
-                                            // }
-                                            mysqli_free_result($result);
-                                            mysqli_close($link);
-                                            echo "</td>
-                                            </tr>
-                                            </tbody>
-                                            </table>";
-
-                                        ?>
-
-                                    <br/>
-                                    <h3> Danie dodatkowe</h3>
-                                    <br/>
-
+                                    <div id="dane_tabela"></div>
                                 </div>
                                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    <?php
-                                   require "dane_do_bazy.php";
-
-                                ?>
-
+                                    <div id="dane_tabela3"></div>
                                 </div>
 
                             </div>
@@ -157,22 +87,25 @@
             <div class="col-12 ">
                 <div class="container">
                     <div class=ramkaLewa>
-                        <button type="button" class="btn btn-success" id="idBtn3">baza</button>
+                        
                         <button type="submit" class="btn btn-success" id="idBtn1">raport</button>
-                        <!--							<button input type="submit" class="btn btn-success" id="idBtn3" value="Wyślij" name="submit" /> wyślij</button>-->
+                        <button type="button" class="btn btn-success" id="idBtn2">baza</button>
+                        <button type="button" class="btn btn-success" id="idBtn3">przycisk</button>
+ 
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+ 
         <div>
-            </br>
+            <br/>
             <p class="act"><b>Active Tab</b>: <span></span></p>
-            </br>
-
-            <p class="act1"><b>Active Tab</b>: <span></span></p>
-
+            <br/>
+            <p class="ind"><b>index</b>: <span></span></p>
+       
         </div>
+        <br/> 
+
     </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

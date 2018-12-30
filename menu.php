@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>	
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script src="/js/menu.js"></script>
 </head>
@@ -17,7 +17,7 @@
 				<a href="/"><img src="/img/logo.png"> </a>
 			</div>
 			<div class="hader2" >
-				<p>Menu </p>
+				<p>Menu </p> 
 			</div>
 
 		</div>
@@ -39,10 +39,10 @@
 					<button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen" >Home</button>
 					<button class="tablink" onclick="openPage('News', this, 'green')" >News</button>
 					<div id="Home" class="tabcontent">
-
+						
 						<p> Menu Opoka</p>
 						<?php
-						require "connection3.php";
+						require "connection3.php"; 
 						connection3();
 						echo "<div >";
 						if($result3 = mysqli_query($link3,"select * from dostawca2 ORDER BY id ASC limit 20")){
@@ -75,7 +75,7 @@
 						<div width="50px" height="50px" id="menuLewe" class="menuCSS2" >
 							<p>Menu Mucha</p>
 							<?php
-							require "connection2.php";
+							require "connection2.php"; 
 							connection2();
 							echo "<div >";
 								if($result2 = mysqli_query($link2,"select * from dostawca1 ORDER BY id ASC limit 20")){
@@ -104,7 +104,7 @@
 							?>
 							</div>
 						</div>
-					</div>
+					</div>	
 				<br>
 				</div>
 			</div>
@@ -112,4 +112,4 @@
 	</div>
 
 </body>
-</html>
+</html>  

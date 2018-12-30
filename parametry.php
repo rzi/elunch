@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css"/>
 </head>
 <body>
-<h1>Paramertry </h1>
+<h1>Paramertry </h1>  
 <br>
-<div>
+<div> 
 <p> dopłata SEIP: </p>
 <?php
-require "connection.php";
-connection();
+require "connection.php"; 
+connection();  
 $query = "select * from parametry";
-
+ 
 $result = mysqli_query($link, $query);
 if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {

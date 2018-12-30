@@ -1,12 +1,12 @@
 <?php
 $login = $_POST['login'];
 $haslo = $_POST['haslo'];
-?>
-<?php header('Content-Type: text/html; charset=utf-8'); ?>
+?> 
+<?php header('Content-Type: text/html; charset=utf-8'); ?>  
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!-- <meta http-equiv="content-type" content="text/html; charset=iso-8859-2"> -->
+<!-- <meta http-equiv="content-type" content="text/html; charset=iso-8859-2"> --> 
 <title>Strona główna logowania</title>
 </head>
 <body>
@@ -20,19 +20,19 @@ $_SESSION['haslo']=$haslo;
 //echo $_SESSION['haslo'];
 //echo '<br>';
 
-require "connection.php";
-connection();
+require "connection.php"; 
+connection(); 
 
-if(!empty($_POST["login"]) && !empty($_POST["haslo"])){
+if(!empty($_POST["login"]) && !empty($_POST["haslo"])){		
 	if($result = mysqli_query($link,"select * from login where my_user = '".htmlspecialchars($_POST["login"])."' AND my_pass = '".htmlspecialchars($_POST["haslo"])."'")){
 		$row_cnt = mysqli_num_rows($result);
 		if ($row_cnt >0) {
 			if($_SESSION['sesa']=="admin" && $_SESSION['haslo']=="admin"){
 				header( 'Location: parametry.php' ) ; // gdy admin (parametry)
 				mysqli_free_result($result);
-			}
+			}	
 			else{
-			header( 'Location: order.php' ) ; // normalne logowanie
+			header( 'Location: order2b.php' ) ; // normalne logowanie
 			mysqli_free_result($result);
 			}
 		}
