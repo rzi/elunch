@@ -1,7 +1,7 @@
 
 jQuery(document).ready(function ($) {
 
-    // inicjalizacja
+    // inicjalizacja Ver-0.0
     var value1;
     var value2;
     var dostawca;
