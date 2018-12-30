@@ -110,6 +110,7 @@ alert("ddd");
                 Za pomocą alertów możemy diagnozować poprawne działania funkcji.
                 Jest to bardzo przydatne w sytacji problemów z dziłaniem programu.*/
                 //$("#mybody").load( "order.php");
+                //alert(" tabela");
                 $("#dane_tabela").load("tabela.php", {
                     d: date1
                 });
@@ -134,6 +135,7 @@ alert("ddd");
 
     // Obsługa enter
     $('#table1 input').keyup(function(e) {
+        alert( " w kayup");
        console.log('keyup called');
        var code = e.keyCode || e.which;
        if (code == '13') {
