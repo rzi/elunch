@@ -1,9 +1,6 @@
 
 jQuery(document).ready(function ($) {
 
-
- 
-
     // inicjalizacja
     var value1;
     var value2;
