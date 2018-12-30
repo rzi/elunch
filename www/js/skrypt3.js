@@ -14,24 +14,9 @@ $(document).ready(function ( ){
 
     $(".act span").text(dost1); // domyslnie  dost1=opoka
 
-//    $("#datepicker").datepicker({
-//        dateFormat: 'yy-mm-dd'
-//    }); // format yy-mm-dd
 
-//     $( "#datepicker" ).datepicker();
-    $('.datepicker').datepicker();
+    //$('.datepicker').datepicker();
 
-//    // ustawienie bieżącej daty
-//    myData=$("#datepicker").find(":input:text").val();
-//    if (myData) {
-//         $("#datepicker").datepicker().datepicker('setDate', 'today');
-//    } // dzisiaj
-//
-//	   //konfiguracja datepickera
-//    $("#datepicker").datepicker({
-//        showWeek: true,
-//        firstDay: 1
-//    }); // konfiguracja
 
     function getTime() {
         var teraz = new Date();
@@ -40,10 +25,10 @@ $(document).ready(function ( ){
     } // bieżąca godzina
 
      // domyslne wczytanie aktywnego tabs -pierwszy
-    //$(function () {
+    $(function () {
         $('#myTab li:first-child a').tab('show');
         //alert("xxxx");
-    //});
+   });
 
     //obsługa przycsków
     $("#idBtn1").click(function () {
@@ -85,7 +70,7 @@ $(document).ready(function ( ){
     // akcja kiedy zmiana daty w datapicker
     $("#datepicker").change(function () {
         value1 = $(this).val();
-        var date1 = $("#datepicker").datepicker().val();
+        var date1 = $("#datepicker").val();
         //alert(date1);
         dost1= $(".act span").text();
         //value2 = $(this).find(":input:text").val();
