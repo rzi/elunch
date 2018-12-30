@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function ($) {
 
     // inicjalizacja Ver-0.0
