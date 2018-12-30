@@ -1,13 +1,13 @@
 
 jQuery(document).ready(function ($) {
 
-    // inicjalizacja Ver-0.0
+    // inicjalizacja Ver-0.0,0
     var value1;
     var value2;
     var dostawca;
     var dost1 = "Opoka";
     var row_index = 0;
-    var col_index = 0;
+  //  var col_index = 0;
     var myData;
     
     $( "#datepicker" ).datepicker();
