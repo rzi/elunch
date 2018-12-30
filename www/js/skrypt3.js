@@ -10,7 +10,6 @@ $(document).ready(function ( ){
   //  var col_index = 0;
     var myData;
 
-    $( "#datepicker" ).datepicker();
 
     $(".act span").text(dost1); // domyslnie  dost1=opoka
 
@@ -18,17 +17,22 @@ $(document).ready(function ( ){
         dateFormat: 'yy-mm-dd'
     }); // format yy-mm-dd
 
+       //konfiguracja datepickera
+    $("#datepicker").datepicker({
+        showWeek: true,
+        firstDay: 1
+    }); // konfiguracja
+
+
+    $( "#datepicker" ).datepicker();
+
+
     // ustawienie bieżącej daty
     myData=$("#datepicker").find(":input:text").val();
     if (myData) {
          $("#datepicker").datepicker().datepicker('setDate', 'today');
     } // dzisiaj
 
-	   //konfiguracja datepickera
-    $("#datepicker").datepicker({
-        showWeek: true,
-        firstDay: 1
-    }); // konfiguracja
 
     function getTime() {
         var teraz = new Date();
@@ -130,7 +134,7 @@ $(document).ready(function ( ){
 
     // Obsługa enter
     $('#table1 input').keyup(function(e) {
-       //console.log('keyup called');
+       console.log('keyup called');
        var code = e.keyCode || e.which;
        if (code == '13') {
            value1 = $(this).val();
