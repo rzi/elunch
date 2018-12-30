@@ -14,23 +14,24 @@ $(document).ready(function ( ){
 
     $(".act span").text(dost1); // domyslnie  dost1=opoka
 
-    $("#datepicker").datepicker({
-        dateFormat: 'yy-mm-dd'
-    }); // format yy-mm-dd
+//    $("#datepicker").datepicker({
+//        dateFormat: 'yy-mm-dd'
+//    }); // format yy-mm-dd
 
-     $( "#datepicker" ).datepicker();
+//     $( "#datepicker" ).datepicker();
+    $('.datepicker').datepicker();
 
-    // ustawienie bieżącej daty
-    myData=$("#datepicker").find(":input:text").val();
-    if (myData) {
-         $("#datepicker").datepicker().datepicker('setDate', 'today');
-    } // dzisiaj
-
-	   //konfiguracja datepickera
-    $("#datepicker").datepicker({
-        showWeek: true,
-        firstDay: 1
-    }); // konfiguracja
+//    // ustawienie bieżącej daty
+//    myData=$("#datepicker").find(":input:text").val();
+//    if (myData) {
+//         $("#datepicker").datepicker().datepicker('setDate', 'today');
+//    } // dzisiaj
+//
+//	   //konfiguracja datepickera
+//    $("#datepicker").datepicker({
+//        showWeek: true,
+//        firstDay: 1
+//    }); // konfiguracja
 
     function getTime() {
         var teraz = new Date();
