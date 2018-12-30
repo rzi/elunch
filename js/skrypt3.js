@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
     var dostawca;
     var dost1 = "Opoka";
     var row_index = 0;
-    var col_index = 0;
+    //var col_index = 0;
     var myData;
     
     $( "#datepicker" ).datepicker();
