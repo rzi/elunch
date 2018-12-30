@@ -1,7 +1,6 @@
+$(document).ready(function ( ){
 
-jQuery(document).ready(function ($) {
-
-    // inicjalizacja Ver-0.0
+    // inicjalizacja Ver0.1
 
     var value1;
     var value2;
