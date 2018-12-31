@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="pl-PL">
-
+<head>
+ <script src="/www/js/skrypt3.js"></script>
+</head>
 <body>
 <?php header('Content-type: text/html; charset=UTF-8'); ?>
 <?php

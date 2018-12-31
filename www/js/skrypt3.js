@@ -130,7 +130,7 @@ $(document).ready(function ( ){
 
     // Obsługa enter
     $('#table1 input').keyup(function(e) {
-       //console.log('keyup called');
+      console.log('keyup called');
        var code = e.keyCode || e.which;
        if (code == '13') {
            value1 = $(this).val();

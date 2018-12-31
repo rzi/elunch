@@ -3,24 +3,18 @@
 <head>
     <title>Orders</title>
     <meta charset="UTF-8" >
-    <link rel="stylesheet" href="/www/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/www/css/style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/www/css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/www/css/style.css" type="text/css" />
 
-
-	<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"
-  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-  crossorigin="anonymous"></script> -->
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
     <script type="text/javascript" src="/www/js/skrypt3.js"></script>
 </head>
 
 <body>
-
-    <?php header('Content-type: text/html; charset=UTF-8'); ?>
     <!-- gora strony -->
     <header class="site-top">
         <div class="container ">
@@ -32,15 +26,10 @@
                 <div class="flex-fill align-self-center ">
                     <h3>Wprowadź dane </h3>
                 </div>
-                <div class="flex-fill align-self-center ">
-
-                </div>
             </div>
 
-            <div id="hrline">
-            </div>
+            <div id="hrline"></div>
         </div>
-
     </header>
 
     <!-- Tresc strony -->
