@@ -4,8 +4,8 @@
     <script src="/www/js/skrypt3.js"></script>
 </head>
 <?php
-$date1 = $_POST['d1'];
-echo $date1;
+/*$date1 = $_POST['d1'];
+echo $date1;*/
 require "connection.php";
 connection();
     echo "<table id='table2' class='fixed_headers' border='1'><thead><tr ><td>id_user</td><td >Imię</td><td>Nazwisko</td><td> Danie</td></tr></thead>";
