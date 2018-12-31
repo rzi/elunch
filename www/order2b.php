@@ -39,7 +39,7 @@
                 <div class="col-12 col-lg-4 ">
                     <div class="container-fluid mh-100 ">
                         <div class=ramkaLewa>
-                            <p> Wybierz zakres raportu: <input name="datepicker" placeholder="wprowadź date:" type="text" style="width:150px;" id="datepicker"></p>
+                            <p> Wybierz zakres raportu: <input name="datepicker" placeholder="wprowadź date:" type="text" style="width:150px;" id="datepicker" class="aaa"></p>
                         </div>
                     </div>
                 </div>
