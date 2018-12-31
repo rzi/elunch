@@ -11,7 +11,7 @@
 echo $date1;*/
 require "connection.php";
 connection();
-echo "<table id='table1' ><thead><tr ><td>id_user</td><td >Imię</td><td>Nazwisko</td><td> Danie</td></tr></thead>";
+echo "<table id='table1' class='fixed_headers' border='1' ><thead><tr ><td>id_user</td><td >Imię</td><td>Nazwisko</td><td> Danie</td></tr></thead>";
 echo "<tbody>";
 
     if($result = mysqli_query($link,"select DISTINCT * from login WHERE 1 ")){
