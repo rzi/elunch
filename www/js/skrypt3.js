@@ -54,8 +54,31 @@ $(document).ready(function ( ){
     });
 
     $("#idBtn3").click(function () {
-            //puste
+        //
     });
+
+    $("#idBtn4").click(function () {
+             // DO EXCELA
+       // alert ("atert do excel");
+        console.log("excel")
+        $("#table2").table2excel({
+            exclude: ".excludeThisClass",
+            name: "Worksheet Name",
+            filename: "SomeFile.xls" //do not include extension
+        });
+
+    }); //do excel
+
+      $("#idBtn5").click(function () {
+             // DO duku
+         $('#table2').printThis({
+            importCSS: false,
+//            loadCSS: "/www/css/style.css",
+            header: "Zamówione na dziś:"
+        });
+
+    });
+
 
     // pobiera do zmiennej Value2 wartość  pierwszej kolumny ( NR SAP)
     $('#table1 tr td').click(function () {
@@ -171,5 +194,7 @@ $(document).ready(function ( ){
        }
 
     }); // keyup
+
+
 
 }); /*Klamra zamykająca $(document).ready(function(){*/
