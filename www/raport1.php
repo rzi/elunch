@@ -90,10 +90,10 @@
 <div class="col-12 ">
     <div class="container">
         <div class=ramkaLewa>
-            <button type="button" class="btn btn-success" id="idBtn5">Drukuj</button>
+            <button type="button" class="btn btn-success" id="idBtn5">Drukuj!</button>
              <button type="button" class="btn btn-success" id="idBtn4">Do excel</button>
 
-            <!--							<button input type="submit" class="btn btn-success" id="idBtn3" value="Wyślij" name="submit" /> wyślij</button>-->
+            <!--	 						<button input type="submit" class="btn btn-success" id="idBtn3" value="Wyślij" name="submit" /> wyślij</button>-->
         </div>
     </div>
 </div>
