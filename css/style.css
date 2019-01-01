@@ -658,3 +658,34 @@ fixed_headers th {
     border-color:  #009530;
 
 }
+
+/* css dla tabela*/
+.table_order table, td, tr{
+	padding-left: 5px;
+	border: 1px solid #009530;
+}
+/*
+.table_order tr{
+		display: block;
+    overflow-y: auto;
+    width: 100%;
+    height: 300px;
+}
+*/
+.table_order thead{
+	background-color: #009530;
+  color: #FDFDFD;
+  border: none;
+
+}
+.table_order th{
+padding-left: 30px;
+}
+/*
+.table_order td {
+
+}
+*/
+.table_order input{
+    border: none;
+}

@@ -151,49 +151,49 @@ $(document).ready(function ( ){
         col_index = 0;
     });
 
-    // Obsługa enter
-    $('#table1 input').keyup(function(e) {
-    var code = e.keyCode || e.which;
-       if (code == '13') {
-           value1 = $(this).val();
-           console.log('wartośc inputa',value1)
-           var date1 = $("#datepicker").datepicker().val();
-           var czas1 = getTime() + ":00";
-           dost1= $(".act span").text();
-           //alert (date1);
-           $.ajax({
-               type: "GET",
-               /*Informacja o tym, że dane będą wysyłane*/
-               url: "dane_do_bazy2.php",
-               /*Informacja, o tym jaki plik będzie przy tym wykorzystywany*/
-               data: {
-                   sesa: value2,
-                   data: date1,
-                   dostawca: dost1,
-                   danie: value1,
-                   czas: czas1
-               },
-
-               success: function () {
-                   /*Zdefiniowanie tzw. alertu (prostej informacji) w sytacji sukcesu wysyłania.
-                Za pomocą alertów możemy diagnozować poprawne działania funkcji.
-                Jest to bardzo przydatne w sytacji problemów z dziłaniem programu.*/
-                   //$(window).load( "order.php");
-               },
-               /*Działania wykonywane w przypadku błędu*/
-               error: function (blad) {
-                   alert("Wystąpił błąd");
-                   console.log(blad);
-                   /*Funkcja wyświetlająca informacje
-                               o ewentualnym błędzie w konsoli przeglądarki*/
-               }
-           });
-           console.log("przed : ", row_index);
-        $('#table1 tr input.danie').slice(row_index+1 ,row_index+2).focus().trigger("click"); //+1 bo tabela jest liczona od 0 , +2 bo chcemy dodać 1
-       return false;
-       }
-
-    }); // keyup
+//    // Obsługa enter
+//    $('#table1 input').keyup(function(e) {
+//    var code = e.keyCode || e.which;
+//       if (code == '13') {
+//           value1 = $(this).val();
+//           console.log('wartośc inputa',value1)
+//           var date1 = $("#datepicker").datepicker().val();
+//           var czas1 = getTime() + ":00";
+//           dost1= $(".act span").text();
+//           //alert (date1);
+//           $.ajax({
+//               type: "GET",
+//               /*Informacja o tym, że dane będą wysyłane*/
+//               url: "dane_do_bazy2.php",
+//               /*Informacja, o tym jaki plik będzie przy tym wykorzystywany*/
+//               data: {
+//                   sesa: value2,
+//                   data: date1,
+//                   dostawca: dost1,
+//                   danie: value1,
+//                   czas: czas1
+//               },
+//
+//               success: function () {
+//                   /*Zdefiniowanie tzw. alertu (prostej informacji) w sytacji sukcesu wysyłania.
+//                Za pomocą alertów możemy diagnozować poprawne działania funkcji.
+//                Jest to bardzo przydatne w sytacji problemów z dziłaniem programu.*/
+//                   //$(window).load( "order.php");
+//               },
+//               /*Działania wykonywane w przypadku błędu*/
+//               error: function (blad) {
+//                   alert("Wystąpił błąd");
+//                   console.log(blad);
+//                   /*Funkcja wyświetlająca informacje
+//                               o ewentualnym błędzie w konsoli przeglądarki*/
+//               }
+//           });
+//           console.log("przed : ", row_index);
+//        $('#table1 tr input.danie').slice(row_index+1 ,row_index+2).focus().trigger("click"); //+1 bo tabela jest liczona od 0 , +2 bo chcemy dodać 1
+//       return false;
+//       }
+//
+//    }); // keyup
 
 
 

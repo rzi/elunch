@@ -37,7 +37,7 @@
     <section class="container">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-4 ">
+                <div class=" col-12 ">
                     <div class="container-fluid mh-100 ">
                         <div class=ramkaLewa>
                             <p> Wybierz zakres raportu: <input name="datepicker" placeholder="wprowadź date:" type="text" style="width:150px;" id="datepicker" class="datepicker"></p>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 ">
                     <div class="container">
                         <div class=ramkaLewa>
                             <p> Wybierz raport:</p>
@@ -63,7 +63,7 @@
                                     <div id="dane_tabela"></div>
                                 </div>
                                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    <div id="dane_tabela3" ></div>
+                                    <div id="dane_tabela3" class="table"></div>
                                 </div>
 
                             </div>
