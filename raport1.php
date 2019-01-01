@@ -25,7 +25,7 @@
             </div>
 
             <div class="flex-fill align-self-center ">
-                <h3 style="width:700px; text-align :center;">Raport  </h3>
+                <h3 style="width:500px; text-align :center;">Raport  </h3>
 
             </div>
             <div class="flex-fill align-self-center">
