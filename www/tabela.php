@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="pl-PL">
 <head>
-<!--     <link rel="stylesheet" href="/www/css/style.css" type="text/css" >
- <script src="/www/js/skrypt3.js"></script>-->
+<!--     <link rel="stylesheet" href="/www/css/style.css" type="text/css" >-->
+ <script src="/www/js/skrypt3.js"></script>
 </head>
 <body>
 <?php header('Content-type: text/html; charset=UTF-8'); ?>
@@ -11,7 +11,7 @@
 echo $date1;*/
 require "connection.php";
 connection();
-echo "<table id='table1' class='fixed_headers' border='1'><thead><tr ><td>id_user</td><td >Imię</td><td>Nazwisko</td><td> Danie</td></tr></thead>";
+echo "<table id='table1' class='fixed_headers' ><thead><tr ><th>id_user</th><th >Imię</th><th>Nazwisko</th><th> Danie</th></tr></thead>";
 echo "<tbody>";
 
     if($result = mysqli_query($link,"select DISTINCT * from login WHERE 1 ")){
