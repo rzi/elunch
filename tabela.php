@@ -2,7 +2,10 @@
 <html lang="pl-PL">
 <head>
 <!--     <link rel="stylesheet" href="/www/css/style.css" type="text/css" >-->
- <script src="/www/js/skrypt_tabela.js"></script>
+
+	<script src="/www/js/skrypt_tabela.js"></script>
+
+
 </head>
 <body>
 <?php header('Content-type: text/html; charset=UTF-8'); ?>

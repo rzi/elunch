@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="/www/css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/www/css/style.css" type="text/css" />
+		<link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css ">
 
+<!--		<script src=//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js></script>-->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--		<script src=https://code.jquery.com/jquery-3.3.1.js></script>-->
+
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="/www/js/skrypt3.js"></script>
 
 </head>
@@ -60,7 +64,7 @@
                             </ul>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <div id="dane_tabela"></div>
+                                    <div id="dane_tabela" class="table"></div>
                                 </div>
                                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                     <div id="dane_tabela3" class="table"></div>

@@ -1,4 +1,4 @@
-//$(document).ready(function ( ){
+$(document).ready(function ( ){
 
 
     // inicjalizacja
@@ -53,8 +53,10 @@
             window.location.href = 'order2b.php';
     });
 
-    $("#idBtn3").click(function () {
-        //
+ 		$("#idBtn3").click(function () {
+        //tabela
+			alert("tabel z pagin");
+			$('#table1').DataTable();
     });
 
     $("#idBtn4").click(function () {
@@ -102,54 +104,54 @@
         $(".act span").text(dostawca);
     });
 
-//    // akcja kiedy zmiana daty w datapicker
-//    $("#datepicker").change(function () {
-//        value1 = $(this).val();
-//        var date1 = $("#datepicker").datepicker().val();
-//        //alert(date1);
-//        dost1= $(".act span").text();
-//        //value2 = $(this).find(":input:text").val();
-//       //alert (value2);
-//        $.ajax({
-//            type: "GET",
-//            /*Informacja o tym, że dane będą wysyłane*/
-//            url: "dane_do_bazy.php",
-//            /*Informacja, o tym jaki plik będzie przy tym wykorzystywany*/
-//            data: {
-//                sesa: value2,
-//                data: date1,
-//                dostawca: dost1,
-//                danie: value1
-//            },
-//            /*Zdefiniowanie jakie dane będą wysyłane na zasadzie
-//                           pary klucz-wartość np: wartosc_z_listy_ajax=Polska*/
-//            /*Działania wykonywane w przypadku sukcesu*/
-//            success: function () {
-//                /*Zdefiniowanie tzw. alertu (prostej informacji) w sytacji sukcesu wysyłania.
-//                Za pomocą alertów możemy diagnozować poprawne działania funkcji.
-//                Jest to bardzo przydatne w sytacji problemów z dziłaniem programu.*/
-//                //$("#mybody").load( "order.php");
-//                $("#dane_tabela").load("tabela.php", {
-//                    d: date1
-//                });
-//                $("#dane_tabela2").load("tabela2.php", {
-//                    d1: date1
-//                });
-//                $("#dane_tabela3").load("tabela3.php", {
-//                    d1: date1
-//                });
-//            },
-//            /*Działania wykonywane w przypadku błędu*/
-//            error: function (blad) {
-//                alert("Wystąpił błąd");
-//                console.log(blad);
-//                /*Funkcja wyświetlająca informacje
-//                               o ewentualnym błędzie w konsoli przeglądarki*/
-//            }
-//        });
-//        row_index = 0;
-//        col_index = 0;
-//    });
+    // akcja kiedy zmiana daty w datapicker
+    $("#datepicker").change(function () {
+        value1 = $(this).val();
+        var date1 = $("#datepicker").datepicker().val();
+        //alert(date1);
+        dost1= $(".act span").text();
+        //value2 = $(this).find(":input:text").val();
+       //alert (value2);
+        $.ajax({
+            type: "GET",
+            /*Informacja o tym, że dane będą wysyłane*/
+            url: "dane_do_bazy.php",
+            /*Informacja, o tym jaki plik będzie przy tym wykorzystywany*/
+            data: {
+                sesa: value2,
+                data: date1,
+                dostawca: dost1,
+                danie: value1
+            },
+            /*Zdefiniowanie jakie dane będą wysyłane na zasadzie
+                           pary klucz-wartość np: wartosc_z_listy_ajax=Polska*/
+            /*Działania wykonywane w przypadku sukcesu*/
+            success: function () {
+                /*Zdefiniowanie tzw. alertu (prostej informacji) w sytacji sukcesu wysyłania.
+                Za pomocą alertów możemy diagnozować poprawne działania funkcji.
+                Jest to bardzo przydatne w sytacji problemów z dziłaniem programu.*/
+                //$("#mybody").load( "order.php");
+                $("#dane_tabela").load("tabela.php", {
+                    d: date1
+                });
+                $("#dane_tabela2").load("tabela2.php", {
+                    d1: date1
+                });
+                $("#dane_tabela3").load("tabela3.php", {
+                    d1: date1
+                });
+            },
+            /*Działania wykonywane w przypadku błędu*/
+            error: function (blad) {
+                alert("Wystąpił błąd");
+                console.log(blad);
+                /*Funkcja wyświetlająca informacje
+                               o ewentualnym błędzie w konsoli przeglądarki*/
+            }
+        });
+        row_index = 0;
+        col_index = 0;
+    });
 
     // Obsługa enter
     $('#table1 input').keyup(function(e) {

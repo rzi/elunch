@@ -54,7 +54,9 @@ $(document).ready(function ( ){
     });
 
     $("#idBtn3").click(function () {
-        //
+        //tabela
+			alert("tabel z pagin");
+			$('#table1').DataTable();
     });
 
     $("#idBtn4").click(function () {
