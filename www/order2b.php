@@ -54,12 +54,12 @@
             <div class="col-12 ">
                 <div class="container">
                     <div class=ramkaLewa>
-                        <p>Wybierz zakres raportu: <input type="date" name="datepicker" placeholder="wprowadź date:" style="width:150px; display:inline;" id="datepicker"></p>
+                        <p>Wybierz zakres raportu: <input type="date" name="datepicker" placeholder="wprowadź date:" style="width:160px; display:inline;" id="datepicker"></p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12">
+            <div class="col">
                 <div class="container">
                     <div class=ramkaLewa>
                         <p> Wybierz raport:</p>
@@ -87,7 +87,7 @@
         </div>
         <div class="w-100"></div>
         <br />
-        <div class="col-12 ">
+        <div class="col ">
             <div class="container">
                 <div class=ramkaLewa>
 

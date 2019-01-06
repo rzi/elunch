@@ -7,15 +7,14 @@
   width: 100%;
 
 }
-.ddcss3support .ddshadow {
+/*.ddcss3support .ddshadow {
 background-color: transparent;
-box-shadow: 5px 5px 5px #aaa; /* box-shadow color generally should be a little darker than that for the NON CSS3 capable browsers background-color */
+box-shadow: 5px 5px 5px #aaa;  box-shadow color generally should be a little darker than that for the NON CSS3 capable browsers background-color
 -moz-box-shadow: 5px 5px 5px #aaa;
 -webkit-box-shadow: 5px 5px 5px #aaa;
-}
-
+}*/
 p, form { margin: 0; /*display: inline;*/}
-body { margin: 0px 0px 0px 0px; }
+body { margin: 0px ; }
 html, body, input, select {
   color: #009530;
   font-size: 16px;
@@ -24,27 +23,15 @@ html, body, input, select {
   text-align: left;
   width:auto;
 }
-.bigtitle {
-    width: 170px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #009530;
-    line-height: 10px;
-    text-align: center;
-    float: inherit;
-    vertical-align: text-bottom;
-
-}
 .logoSchneider{
 	width: 160px;
 
 }
-
 .layout {
-    width: 1200px;
+    width: 800px;
     position: absolute;
     left: 50%;
-    margin-left: -600px; /* połowa szerokości */
+    margin-left: -400px; /* połowa szerokości */
 }
 .info {
     margin: auto;
@@ -86,8 +73,7 @@ html, body, input, select {
   text-align-last: left;
 
 }
-.hader1
-{
+.hader1{
     width: 350px;
     padding-left: 20px;
     font-size: 20px;
@@ -95,9 +81,7 @@ html, body, input, select {
     color: #009530;
 	margin-top: 8px;
 }
-
-.hader2
-{
+.hader2{
     width: 480px;
     font-size: 20px;
     font-weight: bold;
@@ -112,7 +96,6 @@ html, body, input, select {
     text-align-last: center;
 
 }
-
 .lewy {
     margin: auto;
     width: 33%;
@@ -129,8 +112,7 @@ html, body, input, select {
 
 
     }
-
-	.prawy {
+.prawy {
     margin: auto;
     width: 66%;
     border: 3px solid #009530;
@@ -146,7 +128,7 @@ html, body, input, select {
 
 
     }
-	.srodek {
+.srodek {
     margin: auto;
     width: 33%;
     border: 3px solid #009530;
@@ -162,8 +144,7 @@ html, body, input, select {
 
 
     }
-
-	.lewy_d {
+.lewy_d {
     margin: auto;
     width: 33%;
     border: 3px solid #009530;
@@ -182,8 +163,7 @@ html, body, input, select {
 
 
     }
-
-	.prawy_d {
+.prawy_d {
     margin: auto;
     width: 66%;
     border: 3px solid #009530;
@@ -200,7 +180,7 @@ html, body, input, select {
     word-wrap:break-word;
 
     }
-	.srodek_d {
+.srodek_d {
     margin: auto;
     width: 33%;
     border: 3px solid #009530;
@@ -236,7 +216,6 @@ text-align-last: left;
 
   background-color: #eee;
 }
-
 .menuCSS1 {
     margin: auto;
     width: 50%;
@@ -255,7 +234,7 @@ text-align-last: left;
     word-wrap:break-word;
 
     }
-	.menuCSS2 {
+.menuCSS2 {
     margin: auto;
     width: 50%;
     border: 3px solid #009530;
@@ -274,7 +253,7 @@ text-align-last: left;
 
 
     }
-		.menuCSS5 {
+.menuCSS5 {
 
     font-size: 18px;
     color: #009530;
@@ -286,8 +265,7 @@ text-align-last: left;
 
 
     }
-
-	.menuCSS3 {
+.menuCSS3 {
     margin: auto;
     width: 50%;
     border: 3px solid #009530;
@@ -306,13 +284,10 @@ text-align-last: left;
 
 
     }
-
-	table tbody tr:hover,
+table tbody tr:hover,
 table tbody tr:hover *{
     background: 	#FAEBD7;
 }
-
-
 table tbody tr thead tr *{
 	border-color: #009530;
 	width: 100%;
@@ -350,7 +325,6 @@ overflow-y: auto;
 overflow-x: hidden;
 height: 200px;
 }
-
 #menuLewe thead  {
 	background-color:green;
 	color:white;
@@ -403,7 +377,6 @@ height: 200px;
 	//width:100%;
 */
 }
-
 #menuLewe3 tbody {
 /*
 //display: block;
@@ -414,8 +387,6 @@ overflow-x: auto;
 height: 800px;
 width:800px;
 }
-
-
 #menuLewe3 thead  {
 	background-color:green;
 	color:white !important;
@@ -432,7 +403,6 @@ width:800px;
 /*	//width:100%;*/
 	word-wrap: break-word;
 }
-
 #mydive{
 	display: block;
 	overflow-x: auto;
@@ -440,13 +410,10 @@ width:800px;
 	height:280px;
 	width:100%;
 	}
-
-
 #menuLewe3 .myTr2{
 	text-align-last: left;
 
 }
-
 .tableOrder thead td tr {
 	background-color:green;
 	color:white;
@@ -457,7 +424,6 @@ width:800px;
 
 
 }
-
 .tableOrder  td{
 	text-align: center;
 /*	width:15%;*/
@@ -469,9 +435,6 @@ margin-left:10px;
 	width:80px;
     padding: 10px;
 }
-
-
-
 table thead td tr{
 
 color: white !important;
@@ -488,16 +451,15 @@ width:100%;
     display: inline-block ;
     font-size: 16px;
 }
-
 .ramkaLewa{
 
-   width:100%;
+    width:100%;
     margin: 3px;
     border: 3px solid #009530;
     padding: 3px;
     padding-left: 10px;
-     font-size: 18px;
-     color: #009530;
+    font-size: 18px;
+    color: #009530;
     text-align-last: left;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -513,12 +475,12 @@ width:100%;
 
 
 }
-
 .fixed_headers {
-    width: auto;
-    table-layout: fixed;
+    width: 100%;
+    table-layout: auto;
     border-collapse: collapse;
-    border-color: green;
+    border-color: #009530;
+
 }
 /*
 .fixed_headers th {
@@ -528,36 +490,38 @@ width:100%;
 .fixed_headers th,
 .fixed_headers td {
     padding: 5px;
-    text-align: center;
-/*    border: green;*/
+/*    text-align: center;*/
 }
+/*
 .fixed_headers td:nth-child(1),
 .fixed_headers th:nth-child(1) {
-    min-width: 250px;
+    min-width: 150px;
 }
 .fixed_headers td:nth-child(2),
 .fixed_headers th:nth-child(2) {
-    min-width: 250px;
+    min-width: 150px;
 }
 .fixed_headers td:nth-child(3),
 .fixed_headers th:nth-child(3) {
-    width: 250px;
+    width: 150px;
 }
-
 .fixed_headers td:nth-child(4),
 .fixed_headers th:nth-child(4) {
-    width: 250px;
+    width: 150px;
 }
+*/
 .fixed_headers thead {
     background-color: #009530;
     color: #FDFDFD;
 }
-.fixed_headers thead tr {
-    display: block;
+.fixed_headers thead, tr,th  {
+    display: inline-block;
     position: relative;
+/*     border-color: #009530;*/
+
 }
 .fixed_headers tbody {
-    display: block;
+    display: inline-block;
     overflow-y: auto;
     width: 100%;
     height: 300px;
@@ -566,21 +530,11 @@ width:100%;
     border: none;
 
 }
-.fixed_headers table{
-    border-color: green;
 
-}
 /*
 .fixed_headers tbody tr:nth-child(even) {
     background-color: #DDD;
 }*/
-
-.fixed_headers {
-    width: auto;
-    table-layout: fixed;
-    border-collapse: collapse;
-    border-color: green;
-}
 /*
 .fixed_headers th {
 text-decoration: underline;
@@ -604,7 +558,6 @@ text-decoration: underline;
 .fixed_headers_d th:nth-child(3) {
     width: 150px;
 }
-
 .fixed_headers_d td:nth-child(4),
 .fixed_headers_d th:nth-child(4) {
     width: 100px;
