@@ -1,6 +1,5 @@
 $(document).ready(function ( ){
-
-    // inicjalizacja Ver0.1
+//wersja z datepicker bootstrap
 
     var value1;
     var value2;
@@ -10,37 +9,29 @@ $(document).ready(function ( ){
   //  var col_index = 0;
     var myData;
 
-
-
     $(".act span").text(dost1); // domyslnie  dost1=opoka
 
-
     //$('.datepicker').datepicker();
-
 
     function getTime() {
         var teraz = new Date();
         var wynik = teraz.getHours() + ":" + teraz.getMinutes();
         return (wynik);
     } // bieżąca godzina
-
      // domyslne wczytanie aktywnego tabs -pierwszy
     $(function () {
         $('#myTab li:first-child a').tab('show');
         //alert("xxxx");
    });
-
     //obsługa przycsków
     $("#idBtn1").click(function () {
             //alert("test raport");
             window.location.href = 'raport1.php';
     });
-
     $("#idBtn2").click(function () {
             //alert('test2 baza');
             window.location.href = 'order2b.php';
     });
-
     $("#idBtn3").click(function () {
             //puste
     });
@@ -60,13 +51,11 @@ $(document).ready(function ( ){
     $(".nav-tabs a").click(function () {
         $(this).tab('show');
     });
-
     // dodaje do act span nazwe aktywnego tabs
     $('.nav-tabs a').on('shown.bs.tab', function (event) {
         dostawca = $(event.target).text(); // active tab
         $(".act span").text(dostawca);
     });
-
     // akcja kiedy zmiana daty w datapicker
     $("#datepicker").change(function () {
         value1 = $(this).val();
@@ -115,13 +104,12 @@ $(document).ready(function ( ){
         row_index = 0;
         col_index = 0;
     });
-
     // Obsługa enter
     $('#table1 input').keyup(function(e) {
-       //console.log('keyup called');
+       console.log('keyup called');
        var code = e.keyCode || e.which;
        if (code == '13') {
-           value1 = $(this).val();
+           value1 = $('#datepicker').val();
            console.log('wartośc inputa',value1)
            var date1 = $("#datepicker").datepicker().val();
            var czas1 = getTime() + ":00";
