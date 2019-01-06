@@ -509,6 +509,9 @@ width:100%;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-left: 10px;
+    border: 1px solid #009530;
+
+
 }
 
 .fixed_headers {
