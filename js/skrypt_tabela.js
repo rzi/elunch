@@ -3,7 +3,9 @@ $(document).ready(function ( ){
          "searching": false,
          "paging": true,
          "info": false,
-         "lengthChange":false
+         "lengthChange":false,"language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Polish.json"
+        }
     } );
 
     // inicjalizacja
