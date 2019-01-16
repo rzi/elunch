@@ -63,14 +63,14 @@ $('#table1 input').keyup(function(e) {
                czas: czas1
            },
 
-           success: function () {
+           done: function () {
                /*Zdefiniowanie tzw. alertu (prostej informacji) w sytacji sukcesu wysyłania.
             Za pomocą alertów możemy diagnozować poprawne działania funkcji.
             Jest to bardzo przydatne w sytacji problemów z dziłaniem programu.*/
                //$(window).load( "order.php");
            },
            /*Działania wykonywane w przypadku błędu*/
-           error: function (blad) {
+           fail: function (blad) {
                alert("Wystąpił błąd");
                console.log(blad);
                /*Funkcja wyświetlająca informacje

@@ -491,6 +491,9 @@ width:100%;
 .fixed_headers td {
     padding: 5px;
 /*    text-align: center;*/
+    width: 100%;
+    min-width: 200px;
+
 }
 /*
 .fixed_headers td:nth-child(1),
@@ -516,8 +519,9 @@ width:100%;
 }
 .fixed_headers thead, tr,th  {
     display: inline-block;
-    position: relative;
+/*    position: relative;*/
 /*     border-color: #009530;*/
+    width: 100%;
 
 }
 .fixed_headers tbody {

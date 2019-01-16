@@ -147,6 +147,7 @@ $("#datepicker").change(function () {
                },
 
                success: function () {
+
                    /*Zdefiniowanie tzw. alertu (prostej informacji) w sytacji sukcesu wysyłania.
                 Za pomocą alertów możemy diagnozować poprawne działania funkcji.
                 Jest to bardzo przydatne w sytacji problemów z dziłaniem programu.*/
