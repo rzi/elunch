@@ -51,6 +51,7 @@ $('#table1 input').keyup(function(e) {
        dost1= $(".act span").text();
        //alert (date1);
        $.ajax({
+           async: true,   // this will solve the problem
            type: "GET",
            /*Informacja o tym, że dane będą wysyłane*/
            url: "dane_do_bazy2.php",
