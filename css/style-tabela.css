@@ -1,0 +1,26 @@
+table{
+
+}
+tbody {
+    display: block;
+    overflow-y: auto;
+    width: auto;
+    height: 300px;
+}
+thead{
+	display: flex;
+	width: 100%;
+}
+th{
+	min-width: 200px;
+	width: auto;
+
+}
+
+input, td{
+	min-width: 150px;
+	width: auto;
+}
+tr{
+	width: 100%;
+}
