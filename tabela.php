@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="/www/css/style.css" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
 
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script
+	src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+
+<!--	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
 
     <script type="text/javascript" src="/www/js/dataTables.min.js"></script>
-    <script
+<!--    <script
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>-->
 
-
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="/www/js/skrypt_tabela.js"></script>
-
-
-
+  <script src="/www/js/skrypt_tabela.js"></script>
 </head>
 <body>
 <?php header('Content-type: text/html; charset=UTF-8'); ?>
@@ -30,7 +30,7 @@
 echo $date1;*/
 require "connection.php";
 connection();
-echo "<table id='table1' class='table_order'  ><thead><tr ><th>id_user</th><th >Imię</th><th>Nazwisko</th><th> Danie</th></tr></thead>";
+echo "<table id='table1'   ><thead><tr ><th>id_user</th><th >Imię</th><th>Nazwisko</th><th> Danie</th></tr></thead>";
 echo "<tbody>";
 
     if($result = mysqli_query($link,"select DISTINCT * from login WHERE 1 ")){

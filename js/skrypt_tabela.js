@@ -1,9 +1,10 @@
 $(document).ready(function ( ){
     $('#table1').DataTable( {
-         "searching": false,
-         "paging": true,
-         "info": false,
-         "lengthChange":false,"language": {
+        "searching": false,
+        "paging": true,
+        "info": false,
+        "lengthChange":false,
+				"language": {
             "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Polish.json"
         }
     } );
@@ -14,28 +15,9 @@ $(document).ready(function ( ){
     var dostawca;
     var dost1 = "Opoka";
     var row_index = 0;
-    var col_index = 0;
     var myData;
 
     $(".act span").text(dost1); // domyslnie  dost1=opoka
-
-    $("#datepicker").datepicker({
-        dateFormat: 'yy-mm-dd'
-    }); // format yy-mm-dd
-
-    $( "#datepicker" ).datepicker();
-
-    // ustawienie bieżącej daty
-    myData=$("#datepicker").find(":input:text").val();
-    if (myData) {
-         $("#datepicker").datepicker().datepicker('setDate', 'today');
-    } // dzisiaj
-
-	   //konfiguracja datepickera
-    $("#datepicker").datepicker({
-        showWeek: true,
-        firstDay: 1
-    }); // konfiguracja
 
     function getTime() {
         var teraz = new Date();
@@ -43,11 +25,6 @@ $(document).ready(function ( ){
         return (wynik);
     } // bieżąca godzina
 
-     // domyslne wczytanie aktywnego tabs -pierwszy
-    $(function () {
-        $('#myTab li:first-child a').tab('show');
-        //alert("xxxx");
-    });
 
     //obsługa przycsków
     $("#idBtn1").click(function () {
@@ -78,7 +55,7 @@ $(document).ready(function ( ){
 
     }); //do excel
 
-      $("#idBtn5").click(function () {
+    $("#idBtn5").click(function () {
              // DO duku
          $('#table2').printThis({
             importCSS: false,
@@ -94,7 +71,7 @@ $(document).ready(function ( ){
         value2 = $(this).parent().find(":input:text").val();
         console.log('wartość SAP: ', value2);
         row_index = $(this).parent().index();
-        col_index = $(this).index();
+//        col_index = $(this).index();
         console.log(' wiersz: ',row_index);
         //console.log('kolumna: ',col_index);
 
@@ -157,7 +134,7 @@ $(document).ready(function ( ){
             }
         });
         row_index = 0;
-        col_index = 0;
+//        col_index = 0;
     });
 
     // Obsługa enter
