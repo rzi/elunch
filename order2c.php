@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="pl-PL">
 <head>
-    <title>Orders</title>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orders</title>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/www/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/www/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/www/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/www/css/style.css" type="text/css" />
 
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.js"
@@ -15,8 +15,7 @@
 	crossorigin="anonymous"></script>
 
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="/www/js/skrypt3a.js"></script>
-
+	<script type="text/javascript" src="/www/js/skrypt3a.js"></script>
 </head>
 
 <body>
@@ -44,7 +43,7 @@
                 <div class=" col-12 ">
                     <div class="container-fluid mh-100 ">
                         <div class=ramkaLewa>
-                            <p> Wybierz zakres raportu: <input name="datepicker" placeholder="wprowadź date:" type="text" style="width:150px;" id="datepicker" class="datepicker"></p>
+													<p>Wybierz zakres raportu: <input type="date" name="datepicker" placeholder="wprowadź date:" style="width:160px; display:inline;" id="datepicker"></p>
                         </div>
                     </div>
                 </div>
@@ -94,8 +93,6 @@
             <br/>
             <p class="act"><b>Active Tab</b>: <span></span></p>
             <br/>
-            <p class="ind"><b>index</b>: <span></span></p>
-
         </div>
         <br/>
 
