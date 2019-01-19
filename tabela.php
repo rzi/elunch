@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/www/css/style.css" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
 
-    <script src="/www/js/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script type="text/javascript" src="/www/js/dataTables.min.js"></script>
     <script
   src="https://code.jquery.com/jquery-1.12.4.min.js"

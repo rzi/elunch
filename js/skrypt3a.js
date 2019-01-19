@@ -56,7 +56,7 @@ $(document).ready(function (){
 
 
     }); //do excel
-      $("#idBtn5").click(function () {
+    $("#idBtn5").click(function () {
              // DO duku
          $('#table2').printThis({
             importCSS: false,
@@ -65,7 +65,6 @@ $(document).ready(function (){
         });
 
     });
-
 
     // pobiera do zmiennej Value2 wartość  pierwszej kolumny ( NR SAP)
     $('#table1 tr td').click(function () {
@@ -102,7 +101,6 @@ $("#datepicker").change(function () {
     row_index = 0;
     col_index = 0;
 });
-
     // Obsługa enter
 $('#table1 input').keyup(function(e) {
 	console.log('keyup called');
@@ -147,5 +145,4 @@ $('#table1 input').keyup(function(e) {
   }
 
 }); // keyup
-
 }); /*Klamra zamykająca $(document).ready(function(){*/
