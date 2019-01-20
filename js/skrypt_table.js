@@ -1,3 +1,7 @@
+$.extend( $.fn.dataTable.defaults, {
+    responsive: true
+} );
+
 $(document).ready(function (){
 //wersja z datepicker HTML w tabela
 

@@ -498,7 +498,7 @@ width:100%;
     color: #FDFDFD;
 }
 .fixed_headers thead, tr,th  {
-    display: inline-block;
+/*    display: block;*/
     width: 100%;
 
 }

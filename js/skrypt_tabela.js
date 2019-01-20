@@ -1,6 +1,12 @@
+$.extend( $.fn.dataTable.defaults, {
+    responsive: true
+} );
+
+
 $(document).ready(function ( ){
     $('#table1').DataTable( {
         "searching": false,
+				"responsive": true,
         "paging": true,
         "info": false,
         "lengthChange":false,

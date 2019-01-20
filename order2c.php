@@ -8,11 +8,15 @@
   <link rel="stylesheet" href="/www/css/bootstrap.min.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/www/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
 
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.js"
 	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	crossorigin="anonymous"></script>
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
+	<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
 
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="/www/js/skrypt3a.js"></script>
@@ -40,14 +44,14 @@
     <section class="container">
         <div class="container">
             <div class="row">
-                <div class=" col-12 ">
+                <div class=" col-sm-12 ">
                     <div class="container-fluid  ">
                         <div class=ramkaLewa>
 													<p>Wybierz zakres raportu: <input type="date" name="datepicker" placeholder="wprowadź date:" style="width:160px;" id="datepicker"></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 ">
+                <div class="col-sm-12 ">
                     <div class="container">
                         <div class=ramkaLewa>
                             <p> Wybierz raport:</p>
@@ -74,7 +78,7 @@
             </div>
             <div class="w-100"></div>
             <br />
-            <div class="col-12 ">
+            <div class="col-sm-12 ">
                 <div class="container">
                     <div class=ramkaLewa>
 
