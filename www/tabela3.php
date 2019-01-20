@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pl-PL">
 <head>
-<script type="text/javascript" src="/www/js/skrypt_table.js"></script>
+<script type="text/javascript" src="/www/www/js/skrypt_table3.js"></script>
 </head>
 <body>
 <!--<?php header('Content-type: text/html; charset=UTF-8'); ?>-->
@@ -10,7 +10,7 @@
 //echo $date1;
 require "connection.php";
 connection();
-echo "<table id='table1' style='width:100%;' border='0'><thead><tr style='width:98%;'><th style='width:15%;'>id_user </th><th style='width:25%;'>Imię</th><th style='width:25%;'>Nazwisko</th><th style='width:35%;'> Danie</th></tr></thead>";
+echo "<table id='table3' style='width:100%;' border='0'><thead><tr style='width:98%;'><th style='width:15%;'>id_user </th><th style='width:25%;'>Imię</th><th style='width:25%;'>Nazwisko</th><th style='width:35%;'> Danie</th></tr></thead>";
 
 echo "<tbody>";
 

@@ -11,7 +11,7 @@ function getTime() {
     return (wynik);
 } // bieżąca godzina
 
-$('#table1 tr td').click(function () {
+$('#table3 tr td').click(function () {
    nr_SAP = $(this).parent().find(":input:text").val();
     console.log('wartość SAP: ', nr_SAP);
     row_index = $(this).parent().index();
@@ -19,7 +19,7 @@ $('#table1 tr td').click(function () {
 });
 
 // Obsługa enter
-$('#table1 input').keyup(function(e) {
+$('#table3 input').keyup(function(e) {
     //console.log('keyup called');
    var code = e.keyCode || e.which;
    if (code == '13') {
@@ -53,7 +53,7 @@ $('#table1 input').keyup(function(e) {
            }
        });
 
-    $('#table1 tr input.danie').slice(row_index+1 ,row_index+2).focus().trigger("click"); //+1 bo talela jest liczona od 0 , +2 bo chcemy dodać 1
+    $('#table3 tr input.danie').slice(row_index+1 ,row_index+2).focus().trigger("click"); //+1 bo talela jest liczona od 0 , +2 bo chcemy dodać 1
    return false;
    }
 

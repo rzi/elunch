@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pl-PL">
 <head>
-<script type="text/javascript" src="/www/js/skrypt_table.js"></script>
+<script type="text/javascript" src="/www/www/js/skrypt_table.js"></script>
 </head>
 <body>
 <!--<?php header('Content-type: text/html; charset=UTF-8'); ?>-->

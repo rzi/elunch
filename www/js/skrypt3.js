@@ -8,6 +8,14 @@ var wybrany_dostawca;
 dost1= "Opoka";
 var row_index = 0;
 $(".act span").text(dost1); // domyslnie  dost1=opoka
+
+var now = new Date();
+var today = now.getFullYear() + '-' + (now.getMonth() +11) + '-' +  now.getDate()   ;
+    //alert(today);
+    console.log(today);
+    $("#datepicker").val(today);
+   $("#datepicker").trigger('click');
+
 function getTime() {
 		var teraz = new Date();
 		var wynik = teraz.getHours() + ":" + teraz.getMinutes();
@@ -43,13 +51,13 @@ $('#table1 tr td').click(function () {
 // przełacnik zakładek  TABs
 $(".nav-tabs a").click(function () {
 		$(this).tab('show');
-	$("#datepicker").change();
+	//$("#datepicker").change();
 });
 // dodaje do act span nazwe aktywnego tabs
 $('.nav-tabs a').on('shown.bs.tab', function (event) {
 		 dostawca = $(event.target).text(); // active tab
 		$(".act span").text(dostawca);
-		$("#datepicker").change();
+		//$("#datepicker").change();
 });
 $("#datepicker").change(function () {
 	var date1 = $("#datepicker").val();
@@ -80,7 +88,7 @@ $('#table1 input').keyup(function(e) {
 	if (code == '13') {
 		value1 = $('#datepicker').val();
 		console.log('wartośc inputa',value1)
-		var date1 = $("#datepicker").datepicker().val();
+		//var date1 = $("#datepicker").datepicker().val();
 		var czas1 = getTime() + ":00";
 		dost1= $(".act span").text();
 		//alert (date1);
